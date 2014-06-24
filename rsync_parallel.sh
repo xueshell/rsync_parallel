@@ -16,7 +16,7 @@ set -e
 #     might want to test weird options upfront.
 #
 if which parallel then
-	continue;
+	continue
 else
 	yum install -y parallel
 fi
