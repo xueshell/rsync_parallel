@@ -15,10 +15,10 @@ set -e
 #   * be a little careful with the options you pass through to rsync. Normal ones will work, you 
 #     might want to test weird options upfront.
 #
-if which pdsh then
+if which parallel then
 	continue;
 else
-	yum install pdsh
+	yum install -y parallel
 fi
 
 if [[ "$1" == --parallel=* ]]; then
